@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background: $red;
+    padding: 1em;
+
+    img {
+        width: 10vw;
+        
+    }
+}
+
+nav {
+    ul {
+        display: flex;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            color: $white;
+            margin-right: 1.2em;
+            @include font($ff, 1.2em, 400)
+        }
+    }
+
+}

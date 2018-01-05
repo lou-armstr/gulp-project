@@ -1,0 +1,7 @@
+$brd: 1px solid silver;
+
+@mixin font($fm, $fs, $fw) {
+    font-family: $fm;
+    font-size: $fs;
+    font-weight: $fw;
+}
