@@ -1,16 +1,33 @@
 header {
     display: flex;
+    flex-flow: column wrap;
     justify-content: space-between;
     background: $red;
-    padding: 1em;
+}
 
-    img {
-        width: 10vw;
-        
+.header-box {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+        @include font ($ff, 2.5em, 300);
+        color: $white;
+        letter-spacing: 2px;
+        margin: 1.5em auto;
     }
 }
 
+//nav style
 nav {
+    img {
+        width: 8vw;
+        margin: .5em .5em;
+        min-width: 42px;
+        align-self: center;
+    }
+    display: flex;
+    justify-content: space-between;
     ul {
         display: flex;
         list-style-type: none;
@@ -22,4 +39,54 @@ nav {
         }
     }
 
+}
+
+//----------------------------------------------
+
+.computer {
+    border: 26px solid $white;
+    border-radius: 14px;
+    background-clip: padding-box;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 450px;
+    box-shadow: 12px 6px 25px rgba(black, .5);
+    code {
+        display: block;
+        text-align: left;
+        padding: .8em;
+        border-radius: 9px;
+        background-color: $black;
+        z-index: 1;
+        margin: -6px;
+        height: 410px;
+        span {
+            @include font (inherit, 1.4em, 600);
+            line-height: 1.4em;
+            display: block;
+            color: $green;
+            &:before{
+                content: '$';
+                margin-right: .3em;
+            }
+        }
+    }
+}
+.btn-text {
+    width: 100%;
+    max-width: 700px;
+    margin: 2.5em auto;
+    h2 {
+        @include font ($ff, 1em, 300);
+        line-height: 1.8em;
+        letter-spacing: 1px;
+        color: $white;
+    }
+    a {
+        @include btn;
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
 }

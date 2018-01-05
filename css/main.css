@@ -400,19 +400,103 @@ template {
 
 header {
   display: flex;
+  flex-flow: column wrap;
   justify-content: space-between;
-  background: #CF4647;
-  padding: 1em; }
-  header img {
-    width: 10vw; }
+  background: #CF4647; }
 
-nav ul {
-  display: flex;
-  list-style-type: none; }
-  nav ul a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 1.2em;
+.header-box {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center; }
+  .header-box h1 {
     font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
-    font-weight: 400; }
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 1.5em auto; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+  nav img {
+    width: 8vw;
+    margin: .5em .5em;
+    min-width: 42px;
+    align-self: center; }
+  nav ul {
+    display: flex;
+    list-style-type: none; }
+    nav ul a {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 1.2em;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2em;
+      font-weight: 400; }
+
+.computer {
+  border: 26px solid #fff;
+  border-radius: 14px;
+  background-clip: padding-box;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 450px;
+  box-shadow: 12px 6px 25px rgba(0, 0, 0, 0.5); }
+  .computer code {
+    display: block;
+    text-align: left;
+    padding: .8em;
+    border-radius: 9px;
+    background-color: #002B36;
+    z-index: 1;
+    margin: -6px;
+    height: 410px; }
+    .computer code span {
+      font-family: inherit;
+      font-size: 1.4em;
+      font-weight: 600;
+      line-height: 1.4em;
+      display: block;
+      color: #85FF00; }
+      .computer code span:before {
+        content: '$';
+        margin-right: .3em; }
+
+.btn-text {
+  width: 100%;
+  max-width: 700px;
+  margin: 2.5em auto; }
+  .btn-text h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    color: #fff; }
+  .btn-text a {
+    text-decoration: none;
+    width: 150px;
+    height: 42px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: .7em;
+    display: block;
+    text-transform: uppercase;
+    color: #CF4647;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    box-shadow: 5px 1px 10px rgba(0, 43, 54, 0.5);
+    transform: scale(1);
+    transition: box-shadow, .3s;
+    margin-top: 3em;
+    margin-bottom: 5em; }
+    .btn-text a:hover {
+      box-shadow: 7px 2px 11px rgba(0, 43, 54, 0.6);
+      transform: scale(1.01); }

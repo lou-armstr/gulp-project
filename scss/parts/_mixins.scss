@@ -5,3 +5,27 @@ $brd: 1px solid silver;
     font-size: $fs;
     font-weight: $fw;
 }
+
+//mixin for button
+
+@mixin btn {
+    text-decoration: none;
+    width: 150px;
+    height: 42px;
+    margin: 0 auto;
+    background-color: $white;
+    text-align: center;
+    padding: .7em;
+    display: block;
+    text-transform: uppercase;
+    color: $red;
+    border-radius: 4px;
+    @include font ($ff, 1em, 400);
+    box-shadow: 5px 1px 10px rgba($black, .5);
+    transform: scale(1);
+    transition: box-shadow, .3s;
+    &:hover {
+        box-shadow: 7px 2px 11px rgba($black, .6);
+        transform: scale(1.01);
+    }
+}
