@@ -596,3 +596,65 @@ section.quote {
       font-size: 1em;
       font-weight: 300;
       color: #7F7F7F; }
+
+footer {
+  background-color: #CF4647;
+  height: 100%; }
+  footer div {
+    width: 100%;
+    max-width: 1100px;
+    margin: 2em auto 0;
+    display: flex;
+    color: #fff;
+    text-align: center; }
+    footer div h3 {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.8em;
+      font-weight: 300; }
+  footer .text {
+    display: flex;
+    flex-flow: column wrap; }
+    footer .text p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1em;
+      font-weight: 300;
+      margin-top: 0; }
+    footer .text a {
+      text-decoration: none;
+      width: 150px;
+      height: 42px;
+      margin: 0 auto;
+      background-color: #fff;
+      text-align: center;
+      padding: .7em;
+      display: block;
+      text-transform: uppercase;
+      color: #CF4647;
+      border-radius: 4px;
+      font-family: "Roboto", sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      box-shadow: 5px 1px 10px rgba(0, 43, 54, 0.5);
+      transform: scale(1);
+      transition: box-shadow, .3s;
+      margin: 1em auto; }
+      footer .text a:hover {
+        box-shadow: 7px 2px 11px rgba(0, 43, 54, 0.6);
+        transform: scale(1.01); }
+  footer .sponsors {
+    display: flex;
+    flex-flow: column wrap; }
+    footer .sponsors div {
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 0 auto 2em; }
+      footer .sponsors div a {
+        margin: .2em; }
+      footer .sponsors div img {
+        border-radius: 4px;
+        opacity: .9;
+        transform: scale(1);
+        transition: opacity 100ms; }
+        footer .sponsors div img:hover, footer .sponsors div img:focus {
+          opacity: 1;
+          transform: scale(1.01); }
