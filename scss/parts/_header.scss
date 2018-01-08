@@ -1,8 +1,12 @@
+html {
+    width: 100%;
+}
 header {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     background: $red;
+    width: 100%;
 }
 
 .header-box {
@@ -28,6 +32,7 @@ nav {
     }
     display: flex;
     justify-content: space-between;
+    width: 100%;
     ul {
         display: flex;
         list-style-type: none;
